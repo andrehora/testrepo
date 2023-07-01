@@ -9,3 +9,10 @@ function subtract(x: number, y: number): number {
 function multiply(x: number, y: number): number {
     return x * y;
 }
+
+function divide(x: number, y: number): number {
+    if (y === 0) {
+        throw new Error("Error! Division by zero.");
+    }
+    return x / y;
+}
